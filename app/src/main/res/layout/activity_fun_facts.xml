@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:padding="30dp"
     android:background="#51b46d"
+    android:id="@+id/layout"
     tools:context="au.com.wsit.funfacts.FunFactsActivity">
 
     <TextView
