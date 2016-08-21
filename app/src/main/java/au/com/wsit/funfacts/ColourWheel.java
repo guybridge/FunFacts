@@ -1,5 +1,7 @@
 package au.com.wsit.funfacts;
 
+import android.graphics.Color;
+
 import java.util.Random;
 
 /**
@@ -24,15 +26,18 @@ public class ColourWheel
             "#b7c0c7"  // light gray
     };
 
-    public String getColour()
+    public int getColour()
     {
 
-        String colour = "";
+        String colour;
+
         // Randomly select a fact
         Random randomGenerator = new Random();
         int randomNumber = randomGenerator.nextInt(mColors.length);
         colour = mColors[randomNumber];
 
-        return colour;
+        int ColourAsInt = Color.parseColor(colour);
+
+        return ColourAsInt;
     }
 }
